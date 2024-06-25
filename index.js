@@ -2,6 +2,7 @@
 // document.addEventListener('DOMContentLoaded', () => {
     let parkSelection = document.querySelector('#park-selection');
     let parks = []
+    let infoDiv = document.querySelector(".park-info")
     async function getParkName() {
         try {
             const response = await fetch('https://data.cityofnewyork.us/resource/enfh-gkve.json?$limit=5000');
@@ -38,7 +39,7 @@
 
     getParkName();
 
-    async function getLocation(){
+    async function getLocation(selectedParkSignName){
         const response = await fetch('https://data.cityofnewyork.us/resource/enfh-gkve.json?$limit=5000');
             try{
                 if (!response.ok) {
@@ -70,11 +71,11 @@
                     // } this works as well but for readability i wanted use boroughKeys object for ease of use
                         
                     addy.borough = boroughKeys[addy.borough] || boroughKeys.default;
-                    document.querySelector(".park-info").textContent = `The Address to this park is ${location} Located in the Borough of ${borough}`;
+                    infoDiv.textContent = `The Address to this park is ${addy.location} Located in the Borough of ${addy.borough}`;
                  
                     console.log((`The Address to this park is ${addy.location} Located in the Borough of ${addy.borough}`) )
                 })
-                // console.log(address[addy].location)
+                
             }
                
             catch(error){
@@ -91,8 +92,9 @@ parkSelection.addEventListener('change', (event) => {
     getLocation(selectedParkSignName);
 });
 
-
-
+parkSelection.addEventListener('DOMContentLoaded', () => {
+    getLocation(parkSelection.value);
+});
 
 
 

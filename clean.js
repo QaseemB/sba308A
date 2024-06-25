@@ -5,4 +5,4 @@ import { getLocation } from "./index.js";
 
 // let parkSelection = document.querySelector('#park-selection');
 getLocation()
-getParkName()
+// getParkName()
