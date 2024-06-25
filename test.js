@@ -27,15 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(parks);
             console.log(parks[0].name311);
 
-            // Add event listener to handle selection changes
-            parkSelection.addEventListener('change', (event) => {
-                const selectedParkName = event.target.options[event.target.selectedIndex].textContent;
-                const selectedParkSignName = event.target.value;
-                document.querySelector('#park-info').textContent = `Selected Park: ${selectedParkName} (Sign Name: ${selectedParkSignName})`;
-            });
-
-            // Trigger the event listener initially to show the default selection
-            parkSelection.dispatchEvent(new Event('change'));
 
         } catch (error) {
             console.error('Error fetching data:', error);
