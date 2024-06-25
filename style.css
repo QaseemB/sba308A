@@ -1,0 +1,17 @@
+body{
+    background-color: #2c328d;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+/* #map{
+   
+} */
+
+#selection{
+    border: 3px black solid;
+    width: 40%;
+}
