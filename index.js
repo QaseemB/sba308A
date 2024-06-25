@@ -3,6 +3,7 @@
     let parkSelection = document.querySelector('#park-selection');
     let parks = []
     let infoDiv = document.querySelector(".park-info")
+    
     async function getParkName() {
         try {
             const response = await fetch('https://data.cityofnewyork.us/resource/enfh-gkve.json?$limit=5000');
@@ -39,7 +40,7 @@
 
     getParkName();
 
-    async function getLocation(selectedParkSignName){
+    async function getLocation(x){
         const response = await fetch('https://data.cityofnewyork.us/resource/enfh-gkve.json?$limit=5000');
             try{
                 if (!response.ok) {
@@ -84,7 +85,7 @@
             }
             
     }
-    getLocation()
+    // getLocation()
 // });
 
 parkSelection.addEventListener('change', (event) => {
@@ -92,9 +93,9 @@ parkSelection.addEventListener('change', (event) => {
     getLocation(selectedParkSignName);
 });
 
-parkSelection.addEventListener('DOMContentLoaded', () => {
-    getLocation(parkSelection.value);
-});
+// parkSelection.addEventListener('DOMContentLoaded', () => {
+    getLocation(parkSelection);
+// });
 
 
 
