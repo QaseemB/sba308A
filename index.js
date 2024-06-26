@@ -27,8 +27,8 @@
                 parkSelection.value = parks[0].name311;
             }
 
-            console.log(Array.isArray(parks));
-            console.log(parks);
+            // console.log(Array.isArray(parks));
+            // console.log(parks);
             console.log(parks[0].name311);
 
 

@@ -1,5 +1,6 @@
 body{
-    background-color: #2c328d;
+    /* background-color: #2c328d; */
+    background-image: url("images/central-park-aerial-untapped-cities1-1-1.jpg");
 }
 .container{
     display: flex;
@@ -12,6 +13,18 @@ body{
 } */
 
 #selection{
-    border: 3px black solid;
+    background-color: #2c328d;
+    border: 3px gold solid;
     width: 40%;
+}
+
+h1{
+    color: gold;
+}
+
+.park-info{
+    padding-top: 10%;
+    color: white;
+    line-height: 50px;
+
 }
