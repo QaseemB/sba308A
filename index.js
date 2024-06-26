@@ -53,7 +53,7 @@
                 }
                 
                 const borough = boroughKeys[park.borough] || "unknown";
-                infoDiv.innerHTML = `<p>The Address to this park is ${park.location}Located in the Borough of ${borough}.It has ${park.acres} Acres of land and This park was acquired on ${park.acquisitiondate}. you can find put more about this park by clicking this <a href = '${park.url}'> link </a> </p>`
+                infoDiv.innerHTML = `<p>The Address to this park is ${park.location}Located in the Borough of ${borough}.It has ${park.acres} Acres of land and This park was acquired on ${park.acquisitiondate}. you can find put more about this park by clicking this <a href = '${park.url}' style = 'color: black;'> link </a> </p>`
                 console.log(`The Address to this park is ${park.location} Located in the Borough of ${borough}`)
                 
             }
