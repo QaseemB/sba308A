@@ -1,8 +1,8 @@
-PARKS IN NYC
+## PARKS IN NYC
 
 This repository contains a simple web application that allows users to view information about parks in New York City. The application fetches data from the NYC Open Data API and displays it in a dropdown menu. Upon selecting a park, detailed information about the park is displayed.
 
-Usage
+## Usage
 
 Open index.html in your web browser.
 Select a park from the dropdown menu.
