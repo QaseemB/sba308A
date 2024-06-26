@@ -10,11 +10,11 @@ const parkInfoDiv = document.getElementById('park-info');
 body.insertBefore(hEl,container)
 // const parkSelection = document.querySelector('#park-selection')
 
-function displayParkInfo(park) {
-    parkInfoDiv.textContent = `
-        Name: ${park.name311}
-        Location: ${park.location ? park.location : 'N/A'}
-        Borough: ${boroughKeys[park.borough] || boroughKeys.default}
-    `;
-}
-displayParkInfo()
+// function displayParkInfo(park) {
+//     parkInfoDiv.textContent = `
+//         Name: ${park.name311}
+//         Location: ${park.location ? park.location : 'N/A'}
+//         Borough: ${boroughKeys[park.borough] || boroughKeys.default}
+//     `;
+// }
+// displayParkInfo()
