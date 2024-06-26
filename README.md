@@ -30,3 +30,8 @@ getLocation(x): Displays detailed information about the selected park.
 Event Listeners:
 
 An event listener on the dropdown menu calls getLocation() whenever the selected park changes.
+
+
+## API USED 
+
+https://opendata.cityofnewyork.us/
